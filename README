@@ -1,0 +1,16 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=22
+
+(Hungarian description - see below)
+
+The Hungarian spelling checker uses Vim's highlighting ability to make misspelled (Hungarian) words show up as "Error" (usually white on a red background).
+
+The Vim-based Hungarian spell checker also supports entering words that the cursor is on into a temporary or permanent dictionary and allows one to skip to the previous or subsequent spelling error (if any).
+
+Ideea is based on Charles.Campbell's English spelling checker (see
+http://users.erols.com/astronaut/vim/#Spelling)
+
+
+Magyar helyesírás-ellenõrzõ: a hibás szavakat pirossal kiemeli a ViM "syntax" parancsa segítségével. Hibás az, ami nincs benne a script-ben.
+Természetesen a lista nem teljes; kiegészítéseket szívesen fogadok (legjobb egy saját file-ba összegyûjteni többet és úgy elküldeni).
+
+Installálás, saját szavak gyûjtése: ld. feljebb az angol szöveget, ill. a megjegyzéseket a file elején. Végsõ esetben persze hozzám is lehet fordulni :-)
