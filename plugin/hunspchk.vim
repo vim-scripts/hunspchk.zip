@@ -1,8 +1,8 @@
 " Vim syntax file
 " Language:    Hungarian (just words, no names, locations, etc.)
 " Maintainer:  Kopányi, Sándor <sandor.kopanyi@mailbox.hu>
-" Last Change: 2000.06.20
-" Version:     1.1
+" Last Change: 2000.11.11
+" Version:     1.11
 "
 " This file contains four maps, too:
 "  \et : add  word under cursor into database (temporarily - ie. just this file)
@@ -18,6 +18,7 @@
 " v1.0  : August 24, 2000 : compiled a long list of words from several sources &
 "                           vimify them
 " v1.1  : June 20, 2001   : added more words
+" v1.11 : Nov 11, 2001    : BadWord and MiddleName CAN contain accents
 "
 " Some info in Hungarian:
 
@@ -32434,7 +32435,7 @@ syn keyword GoodWord	jan     feb     már márc        ápr 	máj     jún
 syn keyword GoodWord	aug     júl     aug     szep szept      okt     nov     dec
 
 " The Raison D'Etre!
-syn match   BadWord	"\<[a-zA-Z]\+\>"
+syn match   BadWord	"\<[a-zA-ZáAéÉíIóOöÖoOúUüÜuU]\+\>"
 
 " Note: *matches* need to follow the BadWord so that they take priority!
 " Abbreviations, Possessives, Etc.  For these to be recognized properly,
@@ -32451,7 +32452,7 @@ endif
 syn case match
 
 " ignores people's middle-name initials
-syn match   GoodWord	"\<[A-Z]\."
+syn match   GoodWord	"\<[A-ZAÉIOÖOUÜU]\."
 
 " Highlight the BadWords
 hi link BadWord	Error
